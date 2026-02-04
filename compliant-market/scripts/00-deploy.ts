@@ -7,8 +7,7 @@ import {
   ReservePoolHelper,
   EmergencyPauseManagerHelper,
   TimelockControllerHelper,
-  GenericGovernorHelper,
-  GovernanceTokenHelper,
+  GenericGovernorHelper
 } from "@hazbase/kit";
 import { envOpt, getProvider, getWallet, saveJson } from "../../common.js";
 
@@ -29,7 +28,7 @@ async function main(): Promise<void> {
   addrs.whitelist = wl.address;
 
   // 2) Governance token (optional but useful for governor demos)
-  const govTok = await GovernanceTokenHelper.deploy(
+  const govTok = await FlexibleTokenHelper.deploy(
     {
       name: "hazBase Governance Token",
       symbol: "HBG",
