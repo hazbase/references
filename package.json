@@ -1,0 +1,20 @@
+{
+  "name": "hazbase-references",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "ex:compliant:deploy": "tsx compliant-market/scripts/00-deploy.ts",
+    "ex:compliant:wire": "tsx compliant-market/scripts/01-wire.ts",
+    "ex:compliant:flows": "tsx compliant-market/scripts/02-flows.ts"
+  },
+  "dependencies": {
+    "@hazbase/kit": "^0.3.0",
+    "dotenv": "^16.4.5",
+    "ethers": "^6.13.4"
+  },
+  "devDependencies": {
+    "tsx": "^4.19.1",
+    "typescript": "^5.6.3"
+  }
+}
