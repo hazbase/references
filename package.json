@@ -1,7 +1,7 @@
 {
   "name": "hazbase-references",
   "private": true,
-  "version": "0.0.1",
+  "version": "0.0.2",
   "type": "module",
   "scripts": {
     "ex:compliant:deploy": "tsx compliant-market/scripts/00-deploy.ts",
